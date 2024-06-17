@@ -17,21 +17,22 @@
             <h1>This is where the entry fields go</h1>
             <div class="entry">
             <!-- username -->
-             <div class="textBoxes">
-                <h2>Username</h2>
-                <input type="text" name="userName">
-             </div>
+                <div class="textBoxes">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="My name">
+                </div>
              <!-- title -->
-             <div class="textBoxes">
-                <h2>Title</h2>
-                <input type="text"  name="titlePost">
-            </div>    
+                <div class="textBoxes">
+                    <label for="titlePost">Title</label>
+                    <input type="text" id="titlePost" name="titlePost">
+                </div>    
              <!-- blog content -->
-             <div class="textBoxes">
-                <h2>Post</h2>
-                <textarea rows = 10 name="content"></textarea>
-             </div>
+                <div class="textBoxes">
+                    <label for="content">Content</label>
+                    <textarea id="content" rows = 10 name="content"></textarea>
+                </div>
             </div>
+            <button id="postBlog">Post Blog</button>
         </div>
     </div>
 
