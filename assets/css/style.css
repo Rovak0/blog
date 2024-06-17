@@ -1,0 +1,17 @@
+
+
+
+.frame{
+    /* float:left; */
+    display:flex;
+}
+
+.rightSide{
+    position: fixed;
+    right:0px;
+}
+
+.textBoxes{
+    display: flex;
+    flex-direction: column;
+}
