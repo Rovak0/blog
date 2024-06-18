@@ -2,7 +2,7 @@
 //the local memory item is newPost
 
 const postEl = document.querySelector('.blogPosts'); //returns all div's with blogPosts right?
-
+const backButton = document.querySelector('#backButton');
 
 //check for old posts, update board with new posts
 let postList = []; //scope issues if put in init
@@ -63,6 +63,12 @@ function postBlogs(){
     }
 }
 
+
+//the backbutton
+backButton.addEventListener('click', function (){
+    //fix the address
+    window.location.href ="file:///C:/Users/Eric/Documents/boot%20camp/bulk/homework/blog/index.html";
+})
 
 
 // const checker = createListItem(JSON.parse(localStorage.getItem("newPost")));
