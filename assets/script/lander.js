@@ -41,6 +41,6 @@ postButton.addEventListener('click', function(event){
     //i need to launch the other page to send it to
 
     //fix this before launch
-    window.location.href ="./blogPages.html";
+    window.location.href ="../../blogPages.html";
 });
 
