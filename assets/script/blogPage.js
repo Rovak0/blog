@@ -2,7 +2,9 @@
 //the local memory item is newPost
 
 const postEl = document.querySelector('.blogPosts'); //returns all div's with blogPosts right?
+const bodyEl = document.querySelector('body');
 const backButton = document.querySelector('#backButton');
+const lightSwitch = document.querySelector('#lightSwitch');
 
 //check for old posts, update board with new posts
 let postList = []; //scope issues if put in init
@@ -23,9 +25,9 @@ function init(){
 }
 
 
-const myItem = document.createElement("li"); //making an item doesn't show it
-myItem.textContent = "Hello world"
-postEl.appendChild(myItem);
+// const myItem = document.createElement("li"); //making an item doesn't show it
+// myItem.textContent = "Hello world"
+// postEl.appendChild(myItem);
 
 //need to make a section to display the posts
 //add a div to the body, make it an unordered list
@@ -68,6 +70,16 @@ function postBlogs(){
 backButton.addEventListener('click', function (){
     //fix the address
     window.location.href ="https://rovak0.github.io/blog/";
+})
+
+//turn on/off dark mode
+lightSwitch.addEventListener('click', function(){
+    if(bodyEl.getAttribute('class') == 'light'){
+        bodyEl.setAttribute('class', 'dark');
+    }
+    else{
+        bodyEl.setAttribute('class', 'light');
+    }
 })
 
 

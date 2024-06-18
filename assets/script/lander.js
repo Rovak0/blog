@@ -42,6 +42,7 @@ postButton.addEventListener('click', function(event){
 
     //fix this before launch
     console.log("Check");
-    // window.location.href ="../../blogPages.html";
+    window.location.href ="../../blogPages.html";
+    
 });
 

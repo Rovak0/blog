@@ -1,9 +1,21 @@
 /* the style sheet for the blog */
 
+/* dark mode */
+/* dark is just a class */
+.dark{
+    background-color: slategray;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color:black;
+}
+
+
 .blogPosts{
     list-style-type: none;
 }
-
 
 
 /* .card{
@@ -25,10 +37,12 @@
 
 }
 .card header {
-    border-radius: 50px 50px 0px 0px;
+    border-style: solid;
+    border-width: 1px;
     /* padding: 20px; */
 }
 .card footer {
-    border-radius: 50px 50px 0px 0px;
+    border-style: solid;
+    border-width: 1px;
     /* padding: 20px; */
 }
