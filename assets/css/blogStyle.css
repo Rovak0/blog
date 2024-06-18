@@ -3,3 +3,32 @@
 .blogPosts{
     list-style-type: none;
 }
+
+
+
+/* .card{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.card header{
+    font-size: 150%;
+} */
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+
+}
+.card header {
+    border-radius: 50px 50px 0px 0px;
+    /* padding: 20px; */
+}
+.card footer {
+    border-radius: 50px 50px 0px 0px;
+    /* padding: 20px; */
+}
