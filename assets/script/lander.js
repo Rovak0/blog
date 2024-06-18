@@ -11,10 +11,10 @@ const postButton = document.querySelector('#postBlog');
 
 //make the data packer
 function packData(){
-    let fullPost ={
-        postUsername: username.value,
-        postTitle: title.value,
-        postContent: content.value
+    let fullPost ={ //don't worry about reusing variable names, it makes it clearer
+        username: username.value,
+        title: title.value,
+        content: content.value
     }
     //likely needs to be turned into a cookie
     //turn it into a string to transmit

@@ -1,1 +1,5 @@
 /* the style sheet for the blog */
+
+.blogPosts{
+    list-style-type: none;
+}

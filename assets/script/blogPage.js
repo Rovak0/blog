@@ -1,6 +1,9 @@
 //this is the script for the blog page
 //the local memory item is newPost
 
+const postEl = document.querySelector('.blogPosts'); //returns all div's with blogPosts right?
+
+
 //check for old posts, update board with new posts
 let postList = []; //scope issues if put in init
 function init(){
@@ -9,13 +12,35 @@ function init(){
     }
     if(!(localStorage.getItem("newPost") === null)){ //if there is a new post
         postList.push(JSON.parse(localStorage.getItem("newPost"))); //add post to list
+
         localStorage.removeItem("newPost"); //clear post so if there is a reload, it does double add
         localStorage.setItem("postList", JSON.stringify(postList)); //add the new item to the list
     }
 }
 
+
+const myItem = document.createElement("li"); //making an item doesn't show it
+myItem.textContent = "Hello world"
+postEl.appendChild(myItem);
+
 //need to make a section to display the posts
 //add a div to the body, make it an unordered list
+function createListItem(listItem){
+    //each item has an username, a title and content
+    //header- title, content, footer-username
+    //i can set the div class to card to keep it contained
+    const newItem = document.createElement("li");
+    console.log(listItem.postTitle);
+    newItem.setAttribute("header", listItem.title);
+    newItem.setAttribute("footer", listItem.username);
+    newItem.textContent=listItem.content;
+    return newItem; //outputs an item to be added to the page
+}
 //populate the list
 
-init();
+
+
+const checker = createListItem(JSON.parse(localStorage.getItem("newPost")));
+// console.log(checker);
+postEl.appendChild(checker);
+// init();
