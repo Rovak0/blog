@@ -28,11 +28,19 @@ function packData(){
 postButton.addEventListener('click', function(event){
     //stops the refresh, and packs the data
     event.preventDefault();
-    const post = packData();
-    // console.log(post.postUsername);
 
+    // check if there are empty fields
+    if(!(username.value && title.value && content.value)){
+        alert("Please fill out the entire form.");
+        return; //stops the post 
+    }
+    const post = packData();
+    localStorage.setItem('newPost', post); //save item as newPost
+    
     //send the user to the next page
     //i need to launch the other page to send it to
-    // window.location.href = 
+
+    //fix this before launch
+    window.location.href ="file:///C:/Users/Eric/Documents/boot%20camp/bulk/homework/blog/blogPages.html";
 });
 
