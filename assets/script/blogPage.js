@@ -67,7 +67,7 @@ function postBlogs(){
 //the backbutton
 backButton.addEventListener('click', function (){
     //fix the address
-    window.location.href ="file:///C:/Users/Eric/Documents/boot%20camp/bulk/homework/blog/index.html";
+    window.location.href ="https://rovak0.github.io/blog/";
 })
 
 
