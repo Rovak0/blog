@@ -11,11 +11,15 @@ const postButton = document.querySelector('#postBlog');
 
 //make the data packer
 function packData(){
-    const fullPost ={
+    let fullPost ={
         postUsername: username.value,
         postTitle: title.value,
         postContent: content.value
     }
+    //likely needs to be turned into a cookie
+    //turn it into a string to transmit
+    //local memory persists between pages.  Just need to use the same variable name
+    fullPost = JSON.stringify(fullPost);
     return fullPost;
 }
 
