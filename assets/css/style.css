@@ -6,12 +6,32 @@
     display:flex;
 }
 
-.rightSide{
+.leftSide{
+    width : 45%;
     position: fixed;
-    right:0px;
+    left: 3%;
+
+    /* I can't get the sides to take up the whole height  */
+    /* border-style: solid;
+    border-color: black;
+    border-width: 2px; */
+}
+
+
+.rightSide{
+    width : 45%;
+    position: fixed;
+    right:3%;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 2px; */
 }
 
 .textBoxes{
     display: flex;
     flex-direction: column;
+}
+
+.rightSide h1{
+    text-align: center;
 }

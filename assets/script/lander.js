@@ -41,9 +41,14 @@ postButton.addEventListener('click', function(event){
     //i need to launch the other page to send it to
 
     //fix this before launch
-    console.log("Check");
+    // console.log("Check");
+    
+    //I can't figure out how to make 2 websites off 1 github repository
+    //I could make a 2nd repository, but that feels too wrong of an answer
+    //this has what I think should be the answer, but I can't get it to work
+    //leave the script folder, leave the assets folder, look at blogPages.html
     window.location.href ="../../blogPages.html";
-    console.log("why");
+    // console.log("why");
     
 });
 
