@@ -74,6 +74,7 @@ backButton.addEventListener('click', function (){
 
 //turn on/off dark mode
 lightSwitch.addEventListener('click', function(){
+    console.log("Lights!");
     if(bodyEl.getAttribute('class') == 'light'){
         bodyEl.setAttribute('class', 'dark');
     }

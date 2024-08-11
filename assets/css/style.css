@@ -1,5 +1,17 @@
 
+header {
+    padding : 5px;
+}
 
+.dark{
+    background-color: slategray;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color:black;
+}
 
 .frame{
     /* float:left; */
@@ -10,6 +22,10 @@
     width : 45%;
     position: fixed;
     left: 3%;
+    border: 2px solid black;
+    height : 90%;
+    align-content:center;
+    text-align: center;
 
     /* I can't get the sides to take up the whole height  */
     /* border-style: solid;
@@ -25,6 +41,10 @@
     /* border-style: solid;
     border-color: black;
     border-width: 2px; */
+    border: 2px solid black;
+    height : 90%;
+    align-content:center;
+    text-align: center;
 }
 
 .textBoxes{
@@ -32,6 +52,11 @@
     flex-direction: column;
 }
 
-.rightSide h1{
+/* .rightSide h1{
     text-align: center;
+} */
+
+.leftside h1 {
+    padding : 10%;
+    border : 5px darkblue;
 }

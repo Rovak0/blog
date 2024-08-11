@@ -6,6 +6,8 @@ const username = document.querySelector('#username');
 const title = document.querySelector('#titlePost');
 const content = document.querySelector('#content');
 const postButton = document.querySelector('#postBlog');
+const lightSwitch = document.querySelector('#lightSwitch');
+const bodyEl = document.querySelector('body');
 
 
 
@@ -22,6 +24,16 @@ function packData(){
     fullPost = JSON.stringify(fullPost);
     return fullPost;
 }
+
+//turn on/off dark mode
+lightSwitch.addEventListener('click', function(){
+    if(bodyEl.getAttribute('class') == 'light'){
+        bodyEl.setAttribute('class', 'dark');
+    }
+    else{
+        bodyEl.setAttribute('class', 'light');
+    }
+})
 
 
 //when the post blog button is pushed, pack the data
@@ -47,7 +59,7 @@ postButton.addEventListener('click', function(event){
     //I could make a 2nd repository, but that feels too wrong of an answer
     //this has what I think should be the answer, but I can't get it to work
     //leave the script folder, leave the assets folder, look at blogPages.html
-    window.location.href ="blogPages.html";
+    window.location.href ="./assets/html/blogPages.html";
     // console.log("why");
     
 });
